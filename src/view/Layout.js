@@ -22,8 +22,16 @@ export default class Layout {
   }
 
   render (content) {
+    // If the router is in a loading state, add
+    // a class which the CSS will use to animate
+    // the page nicely.
+    const classes = {
+      'Layout': true,
+      'Layout--isLoading': this.router.isLoading
+    }
+
     return this.container.render(
-      <div className='Layout' class-Layout--isLoading={this.router.isLoading}>
+      <div class={classes}>
         {this.header}
         {content}
         {this.footer}
