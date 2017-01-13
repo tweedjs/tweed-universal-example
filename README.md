@@ -2,6 +2,8 @@
 
 This is an example of a universal (initially server rendered) Tweed SPA application.
 
+Try it live [here](https://tweed-universal-example-ijsaepupcg.now.sh)!
+
 In `src/routes.js`, URIs are mapped to functions that asynchronously loads pages. It uses
 Webpack to split the source code into multiple scripts which is loaded only when they're
 needed.
