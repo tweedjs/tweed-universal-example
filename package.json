@@ -1,0 +1,30 @@
+{
+  "name": "tweed-universal-example",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node .server/server/main.js",
+    "build": "npm-run-all build:*",
+    "build:client": "NODE_ENV=production webpack",
+    "build:server": "babel src --ignore src/client --out-dir .server --copy-files",
+    "dev": "npm-run-all --parallel dev:* dev:*:*",
+    "dev:client": "webpack --watch",
+    "dev:server:build": "npm run build:server -- --watch",
+    "dev:server:run": "nodemon .server/server/main.js"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.20.0",
+    "express": "^4.14.0",
+    "tweed": "^0.3.1",
+    "tweed-router": "^0.3.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-dynamic-import-webpack": "^1.0.1",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^4.0.0",
+    "tweed-babel-config": "^0.3.0",
+    "webpack": "^1.14.0"
+  }
+}

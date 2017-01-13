@@ -1,0 +1,4 @@
+{
+  "extends": "tweed-babel-config/config.json",
+  "plugins": ["dynamic-import-webpack"]
+}

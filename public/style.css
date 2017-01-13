@@ -1,0 +1,98 @@
+/*
+-- Root
+*/
+
+body {
+  font-size: 90%;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Helvetica,
+    Arial,
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #196CDA;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 1.9em;
+  font-weight: 400;
+  margin: 1em 0 0.7em;
+}
+
+code {
+  font: inherit;
+  font-family: 'SF Mono', 'Robot Mono', Menlo, monospace;
+  background: #EEE;
+  padding: 0.1em 0.3em;
+  border-radius: 2px;
+}
+
+/*
+-- Menu
+*/
+.Menu {
+  display: inline-flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Menu__wrapper {
+  display: block;
+  margin: 0;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.Menu__item {
+  padding: 0.5em 0.4em;
+}
+
+.Menu__item--active {
+  text-decoration: underline;
+}
+
+/*
+-- Container
+*/
+.Container {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+/*
+-- Layout
+*/
+.Layout {
+  transition: 300ms opacity;
+}
+
+.Layout--isLoading {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+/*
+-- Footer
+*/
+.Footer {
+  border-top: 1px solid #EEE;
+  margin-top: 2em;
+  padding-top: 1em;
+  color: #EEE;
+}
