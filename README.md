@@ -14,7 +14,7 @@ but they both import the main routes file.
 
 ```shell
 > git clone https://github.com/tweedjs/tweed-universal-example
-> cd tweed-universal
+> cd tweed-universal-example
 > npm install    # yarn
 > npm run build  # yarn build
 > npm start      # yarn start
