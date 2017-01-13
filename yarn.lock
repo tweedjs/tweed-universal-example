@@ -2768,14 +2768,9 @@ tweed-babel-config@^0.3.0:
     babel-plugin-transform-react-jsx "^6.8.0"
     babel-preset-latest "^6.16.0"
 
-tweed-router@^0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/tweed-router/-/tweed-router-0.3.3.tgz#cdaf1f8c320188e770a73068133e2fc113ec6898"
-  dependencies:
-    tweed "^0.3.0"
-
-"tweed-router@file:../tweed-router":
-  version "0.3.3"
+tweed-router@^0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/tweed-router/-/tweed-router-0.3.4.tgz#30b159692b23a661110290590166c99c9667c2e2"
   dependencies:
     tweed "^0.3.0"
 
